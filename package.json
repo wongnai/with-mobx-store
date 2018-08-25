@@ -1,0 +1,51 @@
+{
+  "name": "with-mobx-store",
+  "version": "0.2.0",
+  "description": "HOC library for MobX Provider wrapping.",
+  "main": "src/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component --no-demo",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "mobx": "^5.0.4",
+    "mobx-react": "^5.2.5"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "nwb": "0.23.x",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "author": "wongnai",
+  "homepage": "https://github.com/wongnai/with-mobx-store",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wongnai/with-mobx-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wongnai/with-mobx-store/issues"
+  },
+  "keywords": [
+    "react-component",
+    "mobx",
+    "mobx-react",
+    "store",
+    "provider",
+    "hoc"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
