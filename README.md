@@ -1,9 +1,9 @@
 # with-mobx-store
 
-<!-- [![npm package][npm-badge]][npm] -->
+[![npm package][npm-badge]][npm]
 
 **with-mobx-store** is higher order components library for performing automated MobX Provider wrapping.
-<!-- 
+
 ## Installation
 
 ```
@@ -13,7 +13,7 @@ npm i with-mobx-store
 ```
 yarn add with-mobx-store
 ```
- -->
+
 
 ## Concept
 
@@ -187,5 +187,5 @@ export default compose(
 with-mobx-store is licensd under [MIT License](LICENSE.md)
 
 
-<!-- [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.com/package/with-mobx-store -->
+[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
+[npm]: https://www.npmjs.com/package/with-mobx-store
