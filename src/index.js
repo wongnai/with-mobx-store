@@ -1,4 +1,4 @@
 
-export withStore from './withStore'
+export { default as withStore } from './withStore'
 
-export withComponentStore from './withComponentStore'
+export { default as withComponentStore } from './withComponentStore'

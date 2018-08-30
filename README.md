@@ -7,11 +7,11 @@
 ## Installation
 
 ```
-npm i with-mobx-store
+npm i mobx mobx-react with-mobx-store
 ```
 
 ```
-yarn add with-mobx-store
+yarn add mobx mobx-react with-mobx-store
 ```
 
 

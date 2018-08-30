@@ -2,6 +2,11 @@ module.exports = {
   type: 'react-component',
   npm: {
     esModules: true,
-    umd: false
+    umd: {
+      global: 'with-mobx-store',
+      externals: {
+        react: 'React'
+      }
+    }
   }
 }

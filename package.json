@@ -1,8 +1,8 @@
 {
   "name": "with-mobx-store",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "HOC library for MobX Provider wrapping.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
     "css",
@@ -15,14 +15,13 @@
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build"
   },
-  "dependencies": {
-    "mobx": "^5.0.4",
-    "mobx-react": "^5.2.5"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "16.x"
   },
   "devDependencies": {
+    "mobx": "^5.1.0",
+    "mobx-react": "^5.2.5",
     "nwb": "0.23.x",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
