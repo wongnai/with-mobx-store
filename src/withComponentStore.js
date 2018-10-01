@@ -8,10 +8,11 @@ import withStore from './withStore'
  * @param {async function}      options.onInitialized   - Function which is executed when the initialization of stores is complete.
  */
 const withComponentStore = (stores, options) => Component => {
+    const initializedStores = {}
     for (const storeName in stores) {
-        stores[storeName] = new stores[storeName]()
+        initializedStores[storeName] = new stores[storeName]()
     }
-    const ComponentWithComponentStore = withStore(stores, options)(Component)
+    const ComponentWithComponentStore = withStore(initializedStores, options)(Component)
     ComponentWithComponentStore.displayName = 'withComponentStore'
     return ComponentWithComponentStore
 }
