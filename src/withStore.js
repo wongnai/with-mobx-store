@@ -17,7 +17,7 @@ const withStore = (stores, options) => {
         }
     }
     return Component => {
-        class ComponentWithStore extends PureComponent {
+        class withStore extends PureComponent {
             componentDidMount() {
                 if (onMounted) {
                     onMounted(stores, this.props)
@@ -38,8 +38,7 @@ const withStore = (stores, options) => {
                 )
             }
         }
-        ComponentWithStore.displayName = 'withStore'
-        return ComponentWithStore
+        return withStore
     }
 }
 
