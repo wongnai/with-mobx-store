@@ -190,7 +190,7 @@ export default compose(
 
 ## Change Log
 
-- 1.1.0 onMounted, onUnMounted lifecycle
+[Change Log](CHANGELOG.md)
 
 ## License
 
