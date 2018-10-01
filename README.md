@@ -180,11 +180,23 @@ export default compose(
 )(DataHandler)
 ```
 
+### onMounted
+
+`onMounted` is executed when the component is mounted.
+
+### onUnMounted
+
+`onUnMounted` is executed when the component is unmounted.
+
+## Change Log
+
+[Change Log](CHANGELOG.md)
+
 ## License
 
 (C) 2017 Wongnai Media Co, Ltd.
 
-with-mobx-store is licensd under [MIT License](LICENSE.md)
+with-mobx-store is licensed under [MIT License](LICENSE.md)
 
 
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
