@@ -11,7 +11,7 @@ import React, { PureComponent } from 'react'
  */
 const withStore = (stores, options) => {
     if (options) {
-        const { onInitialized, onMounted } = options
+        const { onInitialized, onMounted, onUnMounted } = options
         if (onInitialized) {
             onInitialized(stores)
         }
