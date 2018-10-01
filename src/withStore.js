@@ -18,12 +18,16 @@ const withStore = (stores, options) => {
     }
     return Component => {
         class ComponentWithStore extends PureComponent {
-            componentDidMount() { 
-                onMounted(stores, this.props)
+            componentDidMount() {
+                if (onMounted) {
+                    onMounted(stores, this.props)
+                }
             }
 
             componentWillUnmount() {
-                onUnMounted(stores, this.props)
+                if (onUnMounted) {
+                    onUnMounted(stores, this.props)
+                }
             }
 
             render() {
