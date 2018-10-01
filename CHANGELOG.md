@@ -6,8 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.2] - 2018-10-01
+### Fixed
+- Solve bug on `withStore` when options is undefined new lifecycle like `onMounted` and `onUnMounted` is not working.
+
 ## [1.1.1] - 2018-10-01
-### Changed
+### Fixed
 - Solve bug on `withComponentStore` that store is created on the same object.
 
 ## [1.1.0] - 2018-10-01

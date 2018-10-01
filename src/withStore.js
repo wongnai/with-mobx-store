@@ -9,12 +9,10 @@ import React, { PureComponent } from 'react'
  * @param {function}            options.onMounted       - Function which is executed when the component is mounted.
  * @param {function}            options.onUnMounted     - Function which is executed when the component is unmounted.
  */
-const withStore = (stores, options) => {
-    if (options) {
-        const { onInitialized, onMounted, onUnMounted } = options
-        if (onInitialized) {
-            onInitialized(stores)
-        }
+const withStore = (stores, options = {}) => {
+    const { onInitialized, onMounted, onUnMounted } = options
+    if (onInitialized) {
+        onInitialized(stores)
     }
     return Component => {
         class withStore extends PureComponent {
