@@ -12,7 +12,7 @@ import { Provider } from 'mobx-react'
 const withComponentStore = (stores, options) => Component => {
     const { onInitialized, onMounted, onUnMounted } = options
     const ComponentWithComponentStore = props => {
-        const stores = useMemo(() => {
+        const componentStores = useMemo(() => {
             const initializedStores = {}
             for (const storeName in stores) {
                 initializedStores[storeName] = new stores[storeName]()
@@ -27,7 +27,7 @@ const withComponentStore = (stores, options) => Component => {
             }
         }, [])
         return (
-            <Provider>
+            <Provider {...componentStores}>
                 <Component {...props} />
             </Provider>
         )

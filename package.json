@@ -1,6 +1,6 @@
 {
   "name": "with-mobx-store",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "HOC library for MobX Provider wrapping.",
   "main": "lib/index.js",
   "module": "es/index.js",
