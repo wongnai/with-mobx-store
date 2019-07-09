@@ -21,9 +21,9 @@ const withComponentStore = (stores, options) => Component => {
             return initializedStores
         }, [])
         useEffect(() => {
-            onMounted && onMounted(stores, props)
+            onMounted && onMounted(componentStores, props)
             return () => {
-                onUnMounted && onUnMounted(stores, props)
+                onUnMounted && onUnMounted(componentStores, props)
             }
         }, [])
         return (
